@@ -1,0 +1,50 @@
+body {
+    background: #f6f9ff;
+}
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+}
+
+.sidebar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4154f1;
+}
+
+.sidebar .nav-link {
+    color: #444444;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+.sidebar .nav-link:hover {
+    background: #f6f9ff;
+    color: #4154f1;
+}
+
+.sidebar .nav-link.active {
+    background: #eef2ff;
+    color: #4154f1;
+    font-weight: 600;
+}
+
+.portal-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    min-height: 70px;
+}
+
+.content-wrapper {
+    background: #f6f9ff;
+    min-height: 100vh;
+}
+
+.dashboard-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.08);
+}
