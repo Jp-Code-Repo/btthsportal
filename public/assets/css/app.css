@@ -48,3 +48,49 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(1, 41, 112, 0.08);
 }
+
+.system-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(1, 41, 112, 0.08);
+    transition: all 0.2s ease;
+}
+
+.system-card:hover {
+    transform: translateY(-2px);
+}
+
+.system-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.system-department {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.system-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.system-card {
+    height: 100%;
+    border: 1px solid #eef1f5;
+}
+
+.system-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.system-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    min-height: 48px;
+}
+
+.system-card .btn {
+    margin-top: auto;
+}

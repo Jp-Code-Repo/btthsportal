@@ -7,6 +7,8 @@ ini_set('display_errors', '1');
 require_once __DIR__ . '/../app/core/Router.php';
 require_once __DIR__ . '/../app/core/Controller.php';
 require_once __DIR__ . '/../app/controllers/DashboardController.php';
+require_once __DIR__ . '/../app/controllers/SystemController.php';
+require_once __DIR__ . '/../app/controllers/DepartmentController.php';
 
 $router = new Router();
 
@@ -24,7 +26,23 @@ $router->get('/users', function () {
 });
 
 $router->get('/systems', function () {
-    echo 'Systems Page';
+    $controller = new SystemController();
+    $controller->index();
+});
+
+$router->get('/systems/create', function () {
+    $controller = new SystemController();
+    $controller->create();
+});
+
+$router->get('/departments', function () {
+    $controller = new DepartmentController();
+    $controller->index();
+});
+
+$router->get('/departments/create', function () {
+    $controller = new DepartmentController();
+    $controller->create();
 });
 
 $router->dispatch();
