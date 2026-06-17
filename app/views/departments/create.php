@@ -4,7 +4,10 @@
 
     <div class="card-body">
 
-        <form>
+        <form
+            method="POST"
+            action="/portal/public/departments/store"
+        >
 
             <div class="row">
 
@@ -16,8 +19,10 @@
 
                     <input
                         type="text"
+                        name="name"
                         class="form-control"
                         placeholder="Enter department name"
+                        required
                     >
 
                 </div>
@@ -28,13 +33,16 @@
                         Status
                     </label>
 
-                    <select class="form-select">
+                    <select
+                        name="status"
+                        class="form-select"
+                    >
 
-                        <option selected>
+                        <option value="1" selected>
                             Active
                         </option>
 
-                        <option>
+                        <option value="0">
                             Inactive
                         </option>
 
@@ -47,7 +55,7 @@
             <div class="d-flex gap-2">
 
                 <button
-                    type="button"
+                    type="submit"
                     class="btn btn-primary"
                 >
                     Save Department
